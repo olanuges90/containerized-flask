@@ -14,7 +14,7 @@ This project focuses on containerizing a Python Flask Application for Sports API
 - Exposes RESTful API endpoints of the Flask application securely.
 - Amazon ECR for Docker Image Management.
 - API management and routing using API Gateway
-- Esposes Application's REST API endpoints securely.
+- Exposes Application's REST API endpoints securely.
 
 ## PreRequisites
 - SerpAPI: Signup for Free account and subscribe for API key.
