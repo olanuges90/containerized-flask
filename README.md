@@ -75,10 +75,10 @@ This project focuses on containerizing a Python Flask Application for Sports API
 5. Create an ECS service
      - Create Service:
        - Navigate to Clusters, click on Clusters and select the created Cluster.
-       - Select Service and click Create, select the Task Definiton Family created.
+       - Select Service and click Create, select the Task Definition Family created.
        - Assign a Service name.
        - Select "Replica" as Service type.
-       - Type "2" as Desired Task (We need 2 containers to handle traffic spike).
+       - Choose "2" as Desired Task (We need 2 containers to handle traffic spike).
      - Network Configuration:
        - Create a New Security Group.
        - Select "All TCP" as Type and Source as "Anywhere".
@@ -90,9 +90,9 @@ This project focuses on containerizing a Python Flask Application for Sports API
          
   6. Verify Application Load Balancer
       - In the EC2 Dashboard, Navigate to Application Load Balance and select.
-      - Verify the state of the Load Balancer as "Provivisoning". Wait till deployment and Task is completed (2/2).
+      - Verify the state of the Load Balancer as "Provisioning". scroll down to service and wait till deployment and Task is completed (2/2).
       - Click the ALB created, Navigate to the DNS Name.
-      - Copy and Paste the DNS name in your browser to confirm the API is accessible.
+      - Copy and Paste the DNS name in your browser to confirm the API is accessible and click Enter.
  
   7. Set Up API Gateway
     - Create API:
@@ -121,11 +121,12 @@ This project focuses on containerizing a Python Flask Application for Sports API
   9. Test the Deployment
   - Access the application via the API Gateway endpoint or ALB public URL.
     - Copy Invoke URL and Paste in your Browser.
-    - Add your endpoint "/sports" behind the URL.
+    - Add your endpoint "/sports" behind the URL and click Enter.
 
            https://<api-gateway-id>.execute-api.us-east-1.amazonaws.com/prod/sports
 
   ## Future Enhancements
+  - Built a frontend responsive design.
   - Add HTTPS support to the ELB using an SSL certificate from AWS Certificate Manager (ACM)
   - Configure CloudWatch for logging and monitoring.
 
